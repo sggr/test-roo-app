@@ -1,0 +1,21 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2016-05-18 11:58:14
+hint
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2016-05-18 12:00:19
+version
+project --topLevelPackage ru.sggr
+jpa setup --provider HIBERNATE --database H2_IN_MEMORY 
+entity jpa --class ~.domain.Note
+field string --fieldName author --notNull
+field string --fieldName body --notNull 
+help repository
+help repository jpa
+hint
+hint repository
+help repository jpa 
+repository jpa --interface ~.domain.NoteRepository --entity ~.domain.Note
+service all --interfacePackage ~.service --classPackage ~.service.impl
+web mvc setup
+help web mvc controller 
+web mvc controller --class ~.controller.MainController
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2016-05-18 12:38:50
